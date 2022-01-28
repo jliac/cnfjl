@@ -35,7 +35,7 @@ Resources:
         Fn::Select:
         - "0"
         - Fn::GetAZs: ""
-      InstanceType: t2.nano
+      InstanceType: m4.large
       SecurityGroupIds: 
         - !Ref WebNodeSG
       ImageId: !Ref LatestAmiId
